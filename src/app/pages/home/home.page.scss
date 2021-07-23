@@ -1,0 +1,52 @@
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+    }
+.title{
+      text-align: center;
+      padding: 10px;
+      color: white;
+      font-weight: 600;
+      span{
+          margin:5px;
+      }
+      #following:hover{
+        font-weight: 700;
+      }
+      #forYou:hover{
+        font-weight: 700;
+      }
+  }
+  ion-fab{
+    ion-fab-button{
+        margin-top: 10px;
+    }
+  }
+  .footer{
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    #username{
+        font-weight: bold;
+    }
+    ion-icon{
+        font-weight: bolder;
+        font-size: medium;
+    }
+  }
+  .tiktok{
+      margin-top: -45px;
+      max-width: 100%;
+      max-height: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      --overflow: hidden;
+      video{
+        max-width: 100%;
+    }
+  }
+  ion-progress-bar{
+    position: fixed;
+    bottom: 0;
+  }
+ 

@@ -1,0 +1,53 @@
+<ion-header transparent="true" class="ion-no-border">
+  <ion-toolbar>
+    <div class="title">
+      <span id="following">Following</span>
+      <span>|</span>
+      <span id="forYou">For You</span>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen overflow-scroll="false">
+  <!-- Content -->
+  <div class="tiktok">
+    <video autoplay muted loop #tiktok preload="auto">
+      <source src="../../../assets/videos/pexels.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+
+  <!-- Footer Content -->
+  <div class="footer">
+    <p id="username">@karenne 1-28</p>
+    <p id="hashtag">#avicii #wflove</p>
+    <div class="song">
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <marquee width="50%" direction="left" scrollamount="3">
+        Avicii - Waiting for love (ft. Martin Garrix)
+      </marquee>
+    </div>
+    
+  </div>
+  <!-- Progress of the video -->
+  <ion-progress-bar color='light' value="0.5"></ion-progress-bar>
+
+  <!-- FAB Buttons -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button class="userIcon">
+      <ion-icon name="arrow-forward-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button color='light'>
+      <ion-icon name="heart-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button color='light'>
+      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button color='light'>
+      <ion-icon name="arrow-redo-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button class="musicIcon">
+      <ion-icon name="arrow-forward-circle"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

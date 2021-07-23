@@ -9,16 +9,25 @@ const routes: Routes = [
     children: [
       {
         path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        loadChildren: () => import('../pages/home/home.module').then(m => m.HomePageModule)
       },
       {
         path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+        loadChildren: () => import('../pages/discover/discover.module').then(m => m.DiscoverPageModule)
       },
       {
         path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        loadChildren: () => import('../pages/upload/upload.module').then(m => m.UploadPageModule)
       },
+      {
+        path: 'tab4',
+        loadChildren: () => import('../pages/inbox/inbox.module').then(m => m.InboxPageModule)
+      },
+      {
+        path: 'tab5',
+        loadChildren: () => import('../pages/me/me.module').then(m => m.MePageModule)
+      },
+
       {
         path: '',
         redirectTo: '/tabs/tab1',
