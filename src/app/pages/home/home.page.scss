@@ -18,8 +18,29 @@ ion-toolbar {
       }
   }
   ion-fab{
+    ion-avatar{
+        margin-bottom: 20px;
+    }
     ion-fab-button{
         margin-top: 10px;
+    }
+    ion-icon{
+        font-size: x-large;
+        text-align: center;
+        
+    }
+    .stats{
+        ion-icon{
+            font-size: xx-large;
+            text-align: center;
+            margin-left: 10px;
+        }
+        p{
+            margin-top: 0px !important;
+            text-align: center;
+            font-size: small;
+            font-weight: 600;
+        }
     }
   }
   .footer{
@@ -48,5 +69,7 @@ ion-toolbar {
   ion-progress-bar{
     position: fixed;
     bottom: 0;
+    --background: rgb(136, 136, 136);
+    --progress-background: white;
   }
  

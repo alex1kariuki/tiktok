@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { HomePageRoutingModule } from './home-routing.module';
-
+import { IonBottomDrawerModule } from 'ion-bottom-drawer';
 import { HomePage } from './home.page';
 
 @NgModule({
@@ -13,7 +13,8 @@ import { HomePage } from './home.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    IonBottomDrawerModule
   ],
   declarations: [HomePage]
 })
